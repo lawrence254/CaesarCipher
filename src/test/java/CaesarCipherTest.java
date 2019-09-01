@@ -28,18 +28,19 @@ public class CaesarCipherTest {
         assertEquals("a", testCaesarCipher.encode());
     }
 
-   /* @Test
+    //if input key -25 will result to be
+    @Test
     public void encode_encodeASingleLetterWithAWithinBoundsNegativeShift_b(){
         CaesarCipher testCaesarCipher = new CaesarCipher("a",-25);
         assertEquals("b", testCaesarCipher.encode());
     }
-
-    @Test
+/*
+   @Test
     public void encode_encodesUpperCaseToUpperCaseAndLowerCaseToLowerCase_B(){
         CaesarCipher testCaesarCipher = new CaesarCipher("A",-25);
         assertEquals("B", testCaesarCipher.encode());
     }
-
+/*
     @Test
     public void encode_doesNotEncodeSymbolsAndPeriods_Space(){
         CaesarCipher testCaesarCipher = new CaesarCipher(" ",-25);

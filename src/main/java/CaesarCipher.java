@@ -25,8 +25,8 @@ public class CaesarCipher {
 
         //if (key > 26) {
             key = key % 26;
-       // } else if (key < 0) {
-            //key = (key % 26) + 26;
+      // } else if (key < 0) {
+            key = (key % 26) + 26;
        // }
 
         for(int i = 0; i < text.length(); i++){
@@ -36,23 +36,22 @@ public class CaesarCipher {
 
                 // if (Character.isLowerCase(letter)) {
                  char c = (char) (letter + key);
-                //  if (c > 'z') {
+                 if (c > 'z') {
+
                  resultText += (char) (letter - (26 - key));
-                //} else {
-                 //resultText += c;
-                //  }
-
-            }
-            else if(Character.isLetter(letter)){
-                //else if (Character.isUpperCase(letter)){
-                char c = (char) +(letter + key);
-                //if (c >'Z'){
-                resultText += (char) (letter - (26 - key));
-                //}
-                //else {
+                 } else {
                  resultText += c;
-                // }
+                  }
 
+            }else if(Character.isLetter(letter)){
+                //else if (Character.isUpperCase(letter)) {
+                     char c = (char) +(letter + key);
+                     if (c > 'Z') {
+                         resultText += (char) (letter - (26 - key));
+                     } else {
+                         resultText += c;
+                     }
+                // }
             }
             else {
 
