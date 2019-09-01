@@ -1,14 +1,6 @@
 public class CaesarCipher {
 
-
-
-
-    public String getText() {
-        return text;
-
-    }
-
-   private String text;
+    private String text;
     private Integer key;
 
     public CaesarCipher(String text,Integer key){
@@ -16,4 +8,17 @@ public class CaesarCipher {
         this.text = text;
     }
 
+
+    public String getText() {
+        return text;
+
+    }
+
+
+    public Integer getKey() {
+        return key;
+    }
+
+   /* public String encode() {
+    }*/
 }
