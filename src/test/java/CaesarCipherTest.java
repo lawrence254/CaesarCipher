@@ -15,21 +15,20 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
         assertEquals(true, testCaesarCipher.getKey() instanceof Integer);
     }
-    //accurate single letters
+    //accurate single letters if a with key 1 return b
     @Test
     public void encode_encodeASingleLetterWithShiftWithinBounds_b(){
         CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
         assertEquals("b", testCaesarCipher.encode());
     }
-
-    //
-  /*  @Test
+   /* //if input still gives
+    @Test
     public void encode_encodeASingleLetterWithShiftOutOfBounds_a(){
         CaesarCipher testCaesarCipher = new CaesarCipher("z",1);
         assertEquals("a", testCaesarCipher.encode());
     }
 
-    @Test
+   /* @Test
     public void encode_encodeASingleLetterWithAWithinBoundsNegativeShift_b(){
         CaesarCipher testCaesarCipher = new CaesarCipher("a",-25);
         assertEquals("b", testCaesarCipher.encode());
