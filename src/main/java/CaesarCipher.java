@@ -22,7 +22,10 @@ public class CaesarCipher {
     public String encode() {
         String resultText = "";
 
-    }
+            key = key % 26;
+
+        return resultText;
+        }
 
 
 }
