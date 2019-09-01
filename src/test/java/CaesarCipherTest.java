@@ -34,26 +34,24 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("a",-25);
         assertEquals("b", testCaesarCipher.encode());
     }
-
+//uppercase and lowercase
    @Test
     public void encode_encodesUpperCaseToUpperCaseAndLowerCaseToLowerCase_B(){
         CaesarCipher testCaesarCipher = new CaesarCipher("t",-25);
         assertEquals("u", testCaesarCipher.encode());
     }
-
+//test Encoding with Symbols and spaces .
    @Test
     public void encode_doesNotEncodeSymbolsAndPeriods_Space(){
         CaesarCipher testCaesarCipher = new CaesarCipher(" ",-25);
         assertEquals(" ", testCaesarCipher.encode());
     }
-
+//test for multiCharacter
     @Test
     public void encode_multiCharacterString_String(){
         CaesarCipher testCaesarCipher = new CaesarCipher("abcD a",3);
         assertEquals("d", testCaesarCipher.encode());
     }
-
-
 
 
 }
