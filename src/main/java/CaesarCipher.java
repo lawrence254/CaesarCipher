@@ -23,18 +23,18 @@ public class CaesarCipher {
 
         String resultText = "";
 
-        //if (key > 26) {
+        if (key > 26) {
             key = key % 26;
-      // } else if (key < 0) {
+       } else if (key < 0) {
             key = (key % 26) + 26;
-       // }
+        }
 
         for(int i = 0; i < text.length(); i++){
             char letter = text.charAt(i);
 
             if (Character.isLetter(letter)){
 
-                // if (Character.isLowerCase(letter)) {
+                if (Character.isLowerCase(letter)) {
                  char c = (char) (letter + key);
                  if (c > 'z') {
 
@@ -43,15 +43,15 @@ public class CaesarCipher {
                  resultText += c;
                   }
 
-            }else if(Character.isLetter(letter)){
-                //else if (Character.isUpperCase(letter)) {
+            }
+                else if (Character.isUpperCase(letter)) {
                      char c = (char) +(letter + key);
                      if (c > 'Z') {
                          resultText += (char) (letter - (26 - key));
                      } else {
                          resultText += c;
                      }
-                // }
+                 }
             }
             else {
 

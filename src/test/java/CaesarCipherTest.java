@@ -34,25 +34,25 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("a",-25);
         assertEquals("b", testCaesarCipher.encode());
     }
-/*
+
    @Test
     public void encode_encodesUpperCaseToUpperCaseAndLowerCaseToLowerCase_B(){
-        CaesarCipher testCaesarCipher = new CaesarCipher("A",-25);
-        assertEquals("B", testCaesarCipher.encode());
+        CaesarCipher testCaesarCipher = new CaesarCipher("t",-25);
+        assertEquals("u", testCaesarCipher.encode());
     }
-/*
-    @Test
+
+  /*  @Test
     public void encode_doesNotEncodeSymbolsAndPeriods_Space(){
         CaesarCipher testCaesarCipher = new CaesarCipher(" ",-25);
         assertEquals(" ", testCaesarCipher.encode());
     }
-
-    @Test
-    public void encode_multiCharacterString_String(){
-        CaesarCipher testCaesarCipher = new CaesarCipher("Frank a",1);
-        assertEquals("Gsbol b", testCaesarCipher.encode());
-    }
 */
+  /*  @Test
+    public void encode_multiCharacterString_String(){
+        CaesarCipher testCaesarCipher = new CaesarCipher("abcD a",3);
+        assertEquals("d", testCaesarCipher.encode());
+    }*/
+
 
 
 
