@@ -19,6 +19,10 @@ public class CaesarCipher {
         return key;
     }
 
-   /* public String encode() {
-    }*/
+    public String encode() {
+        String resultText = "";
+
+    }
+
+
 }
