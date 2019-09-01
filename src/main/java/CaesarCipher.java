@@ -17,6 +17,8 @@ public class CaesarCipher {
         return key;
     }
 
+
+
     public String encode() {
 
         String resultText = "";
@@ -35,22 +37,23 @@ public class CaesarCipher {
                 // if (Character.isLowerCase(letter)) {
                  char c = (char) (letter + key);
                 //  if (c > 'z') {
-                //  resultText += (char) (letter - (26 - key));
+                 resultText += (char) (letter - (26 - key));
                 //} else {
-                 resultText += c;
+                 //resultText += c;
                 //  }
 
             }
-            //else if (Character.isUpperCase(letter)){
-            // char c = (char) + (letter + key);
-            //if (c >'Z'){
-            // resultText += (char)(letter -(26 - key));
-            //}
-            //else {
-            // resultText += c;
-            // }
+            else if(Character.isLetter(letter)){
+                //else if (Character.isUpperCase(letter)){
+                char c = (char) +(letter + key);
+                //if (c >'Z'){
+                resultText += (char) (letter - (26 - key));
+                //}
+                //else {
+                 resultText += c;
+                // }
 
-
+            }
             else {
 
             resultText += letter;

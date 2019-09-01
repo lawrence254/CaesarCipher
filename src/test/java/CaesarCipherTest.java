@@ -21,7 +21,7 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
         assertEquals("b", testCaesarCipher.encode());
     }
-   /* //if input still gives
+    //if input still gives a shift out of bond
     @Test
     public void encode_encodeASingleLetterWithShiftOutOfBounds_a(){
         CaesarCipher testCaesarCipher = new CaesarCipher("z",1);
