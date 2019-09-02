@@ -26,7 +26,7 @@ public class CaesarCipher {
         if (key > 26) {
             key = key % 26;
        } else if (key < 0) {
-            key = (key % 26) + 26;
+            key = (key % 26) -26;
         }
 
         for(int i = 0; i < text.length(); i++){
@@ -35,19 +35,19 @@ public class CaesarCipher {
             if (Character.isLetter(letter)){
 
                 if (Character.isLowerCase(letter)) {
-                 char c = (char) (letter + key);
-                 if (c > 'z') {
+                 char c = (char) (letter - key);
+                 if (c > 'r') {
 
-                 resultText += (char) (letter - (26 - key));
+                 resultText += (char) (letter + (26 - key));
                  } else {
                  resultText += c;
                   }
 
             }
                 else if (Character.isUpperCase(letter)) {
-                     char c = (char) +(letter + key);
-                     if (c > 'Z') {
-                         resultText += (char) (letter - (26 - key));
+                     char c = (char) +(letter - key);
+                     if (c > 'R') {
+                         resultText += (char) (letter +(26 - key));
                      } else {
                          resultText += c;
                      }
@@ -63,4 +63,49 @@ public class CaesarCipher {
              return resultText;
         }
 
+
+    public String decode() {
+
+        String resultText = "";
+
+        if (key > 26) {
+            key = key % 26;
+        } else if (key < 0) {
+            key = (key % 26) + 26;
+        }
+
+        for(int i = 0; i < text.length(); i++){
+            char letter = text.charAt(i);
+
+            if (Character.isLetter(letter)){
+
+                if (Character.isLowerCase(letter)) {
+                    char c = (char) (letter -key);
+                    if (c > 'z') {
+
+                        resultText += (char) (letter - (26 - key));
+                    } else {
+                        resultText += c;
+                    }
+
+                }
+                else if (Character.isUpperCase(letter)) {
+                    char c = (char) +(letter + key);
+                    if (c > 'Z') {
+                        resultText += (char) (letter - (26 - key));
+                    } else {
+                        resultText += c;
+                    }
+                }
+            }
+            else {
+
+                resultText += letter;
+            }
+        }
+
+
+        return resultText;
+
+    }
 }

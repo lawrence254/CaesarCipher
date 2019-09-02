@@ -52,5 +52,10 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("abcD a",3);
         assertEquals("defG d", testCaesarCipher.encode());
     }
-
+   /*Decode***/
+    @Test
+    public void decode_decodeASingleLetterWithShiftWithinBounds_a(){
+    CaesarCipher testCaesarCipher = new CaesarCipher("b",1);
+    assertEquals("a", testCaesarCipher.decode());
+}
 }
