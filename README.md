@@ -4,11 +4,11 @@
 
 #### 2 sep 2019
 
-#### By
+#### Author
 Github : komen225
 
 ## Description
-The caesar cipher app works in a way that user are supposed to have the directory .Using the terminal they will compile and able to enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
+The caesar cipher app works in a way that user are supposed to have the file .Using the terminal they will compile and able to enter a code and the  key which will out put their hidden code under the caesar cipher practical cryptography's
 
 
 
@@ -19,7 +19,7 @@ The caesar cipher app works in a way that user are supposed to have the director
 * Fork the repo into your github account
 * Install Intellij idea
 
-
+###Link to the repository
 
 
 ## Known Bugs

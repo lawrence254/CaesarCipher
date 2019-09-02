@@ -50,7 +50,7 @@ public class CaesarCipherTest {
     @Test
     public void encode_multiCharacterString_String(){
         CaesarCipher testCaesarCipher = new CaesarCipher("abcD a",3);
-        assertEquals("d", testCaesarCipher.encode());
+        assertEquals("defG d", testCaesarCipher.encode());
     }
 
 }
