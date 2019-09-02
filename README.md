@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-##Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
+Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
 
 #### DATE
 2 sep 2019
@@ -9,8 +9,8 @@
 Github : komen225
 
 ## Description
-The caesar cipher app works in a way that user are supposed to have the file .Using the terminal they will compile and able to enter a code and the  key which will out put their hidden code under the caesar cipher practical cryptography's
-
+The caesar cipher app works in a way that user are supposed to have the file .Using the terminal they will compile and  be able to enter a code and the  key which will out put their hidden code under the caesar cipher practical cryptography's
+Code will be entered as many time as user wishes.
 
 
 ## Setup/Installation Requirements
@@ -20,9 +20,13 @@ The caesar cipher app works in a way that user are supposed to have the file .Us
 * Fork the repo into your github account
 * Install Intellij idea
 
-#Link to the repository
+##Technology used
+ *Java
+    
+ *intellij idea
+    
+   
 
-https://github.com/komen225/CaesarCipher
 ## Known Bugs
 
 No known Bugs
