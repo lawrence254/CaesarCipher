@@ -1,10 +1,11 @@
 # Caesar Cipher
 
-####.Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
+####Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
 
 #### 2 sep 2019
 
-#### By **[komen225](https://github.com/komen225)**
+#### By
+Github : komen225
 
 ## Description
 The caesar cipher app works in a way that user are supposed to have the directory .Using the terminal they will compile and able to enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
