@@ -1,8 +1,9 @@
 # Caesar Cipher
 
-####Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
+##Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's
 
-#### 2 sep 2019
+#### DATE
+2 sep 2019
 
 #### Author
 Github : komen225
@@ -19,7 +20,7 @@ The caesar cipher app works in a way that user are supposed to have the file .Us
 * Fork the repo into your github account
 * Install Intellij idea
 
-###Link to the repository
+#Link to the repository
 
 https://github.com/komen225/CaesarCipher
 ## Known Bugs
