@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-####Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's,
+Using the terminal , compile and enter a code and key which will out put their hidden code under the caesar cipher practical cryptography's,
 
 #### DATE
 2 sep 2019
@@ -20,7 +20,8 @@ Code will be entered as many time as user wishes.
 * Fork the repo into your github account
 * Install Intellij idea
 
-##Technology used##
+
+## Technology used.
 
  *Java
     
@@ -35,6 +36,7 @@ No known Bugs
 ## Support and contact details
 
 Contact Github :  komen225
+
 Email :komen.robert19@gmail.com
 ## License
 
