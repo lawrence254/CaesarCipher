@@ -3,19 +3,22 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class CaesarCipherTest {
-    //if the text is a String
+
     @Test
-    public void text_textIsString(){
-        CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
+    public void text_textIsString() {
+        CaesarCipher testCaesarCipher = new CaesarCipher("a", 1);
         assertEquals(true, testCaesarCipher.getText() instanceof String);
     }
+
+
     //if the key input is an integer
-    @Test
+
+   @Test
     public void key_keyIsInteger(){
         CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
         assertEquals(true, testCaesarCipher.getKey() instanceof Integer);
     }
-    //accurate single letters if a with key 1 return b
+
     @Test
     public void encode_encodeASingleLetterWithShiftWithinBounds_b(){
         CaesarCipher testCaesarCipher = new CaesarCipher("a",1);
@@ -52,7 +55,7 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher = new CaesarCipher("abcD a",3);
         assertEquals("defG d", testCaesarCipher.encode());
     }
-   /*Decode***/
+
     @Test
     public void decode_decodeASingleLetterWithShiftWithinBounds_a(){
     CaesarCipher testCaesarCipher = new CaesarCipher("b",1);
