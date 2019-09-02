@@ -21,14 +21,14 @@ The caesar cipher app works in a way that user are supposed to have the file .Us
 
 ###Link to the repository
 
-
+https://github.com/komen225/CaesarCipher
 ## Known Bugs
 
 No known Bugs
 
 ## Support and contact details
 
-Contact Github :komen225
+Contact Github :  komen225
 
 ## License
 
